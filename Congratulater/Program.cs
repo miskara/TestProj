@@ -17,7 +17,7 @@ namespace Congratulater
 "FROM emails em " +
 "where em.Date = CAST(Getdate() as date) " +
 "GROUP BY Email,Date " +
-"having COUNT(1)>=4 ";
+"having COUNT(1)>=10 ";
 
             DataTable tbl = new DataTable();
             SqlConnection conn = new SqlConnection("Server = KTLT025\\KTLT025A; Database = JsonTst; Trusted_Connection = True; ");
